@@ -5,7 +5,7 @@ using namespace std;
 struct PhanSo {
     long long tu; // Tử số
     long long mau; // Mẫu số
-};
+}
 
 // Hàm tìm UCLN (sử dụng thuật toán Euclid)
 long long UCLN(long long a, long long b) {
@@ -22,7 +22,7 @@ long long UCLN(long long a, long long b) {
 // Hàm rút gọn phân số
 void rutGon(PhanSo &ps) {
     // Tìm UCLN của tử và mẫu
-    long long ucln = UCLN(ps.tu, ps.mau);
+    long long ucln = UCLN(ps.tu, ps.mau); 
     // Chia tử và mẫu cho UCLN
     ps.tu /= ucln;
     ps.mau /= ucln;
